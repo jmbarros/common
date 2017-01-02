@@ -1,0 +1,30 @@
+---
+  - name: installing ansible application requiriments
+    yum: name={{ item }} state=installed
+    with_items:     
+    #- epel-release 
+    - libselinux-python
+    - python
+    - python-devel
+    - bind
+    - firewalld
+    #- python-virtualenv
+    #- python-setuptools
+
+  - name: starting services and enabling
+    service: name={{ item }} state=restarted enabled=yes
+    with_items:  
+    - named
+  
+
+  - name: stop services and disabling
+    service: name={{ item }} state=stopped enabled=no
+    with_items:  
+    - firewalld
+     
+     
+
+
+
+
+

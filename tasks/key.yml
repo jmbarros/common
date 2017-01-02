@@ -1,0 +1,4 @@
+---
+  - name: Creating pub SSH keys
+    script: /usr/bin/ssh-keygen -N '' -f /root/.ssh/id_rsa
+    script: /usr/bin/rm -rf /root/.ssh/id_rsa*
