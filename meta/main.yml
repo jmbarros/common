@@ -40,7 +40,7 @@ galaxy_info:
   #  - 5.8
   #  - 5.9
   #  - 6.0
-  #- name: Fedora
+  - name: Fedora
   #  versions:
   #  - all
   #  - 16
@@ -52,7 +52,7 @@ galaxy_info:
   #  - 22
   #  - 23
   #  - 24
-  #  - 25
+    - 25
   #- name: DellOS
   #  versions:
   #  - all
