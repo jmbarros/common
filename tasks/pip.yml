@@ -1,7 +1,7 @@
 ---
 
 - name: Installing PIP
-  command: python ./common/files/get-pip.py
+  command: python /etc/ansible/roles/jmbarros.common/files/get-pip.py
 
 - name: Installing PIP Pkg
   command: pip install {{ item }}
