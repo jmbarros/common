@@ -16,7 +16,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: jmbarros.common, x: 42 }
+         - { role: jmbarros.common }
 
 License
 -------
